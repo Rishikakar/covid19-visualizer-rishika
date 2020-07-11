@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
     responsive: true,
   };
   public pieChartColors: Array < any > = [{
-    backgroundColor: ['red', 'yellow', 'green']
+    backgroundColor: ['#d50000', '#212121', '#558b2f']
    
  }];
 
@@ -77,7 +77,7 @@ export class HomeComponent implements OnInit {
     });
    
     this.barChartData = [
-      { data: this.confirmed, label: 'Confirmed', stack: 'a' },
+      { data: this.confirmed, label: 'Active', stack: 'a' },
       { data: this.recovered, label: 'Recovered', stack: 'a' },
       { data: this.deaths, label: 'Deaths', stack: 'a' },
 

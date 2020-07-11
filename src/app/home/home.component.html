@@ -1,24 +1,24 @@
 <div class="container-fluid">
     <div class="row font-weight-bold">
-        <div class="col-lg-3 col-xs-14 card text-center">
+        <div class="col-lg-3 col-xs-15 card text-center" style="background: rgba(134, 11, 11, 0.6)">
             <div class="card-body">
                 <h4>Confirmed</h4>
                 <h1>{{data[0].confirmed}}</h1>
             </div>
         </div>
-        <div class="col-lg-3 col-xs-14 card text-center">
+        <div class="col-lg-3 col-xs-15 card text-center" style="background: rgba(21, 219, 87, 0.6)">
             <div class="card-body">
                 <h4>Recovered</h4>
                 <h1>{{data[0].recovered}}</h1>
             </div>
         </div>
-        <div class="col-lg-3 col-xs-14 card text-center">
+        <div class="col-lg-3 col-xs-15 card text-center" style="background: rgba(105, 6, 6, 0.6)">
             <div class="card-body">
                 <h4>Deceased</h4>
                 <h1>{{data[0].deaths}}</h1>
             </div>
         </div>
-        <div class="col-lg-3 col-xs-14 card text-center">
+        <div class="col-lg-3 col-xs-15 card text-center" style="background: rgba(238, 46, 46, 0.6)">
             <div class="card-body">
                 <h4>Active</h4>
                 <h1>{{data[0].active}}</h1>
@@ -32,9 +32,10 @@
                 </canvas>
             </div>
         </div>
+        <br/>
+        <br/>
 
-
-        <div class="col-lg-6 col-xs-12 mt-5">
+        <div class="col-lg-5 col-xs-12 mt-30">
             <div class="chart-wrapper">
                 <canvas baseChart [colors]="pieChartColors" [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType" [options]="pieChartOptions" [plugins]="pieChartPlugins" [legend]="pieChartLegend">
                 </canvas>
@@ -42,8 +43,8 @@
         </div>
 
     </div>
-    <div class="row mt-4">
-        <div class="col-12">
+    <div class="row mt-5" style="background: rgba(12, 67, 170, 0.6)">
+        <div class="col-12" style="background: rgba(12, 67, 170, 0.6)">
 
             <table class="table table-dark">
                 <thead class="font-weight-bold">
@@ -67,7 +68,7 @@
 
                 </thead>
                 <tbody>
-                    <tr *ngFor="let item of data | slice:2">
+                    <tr *ngFor="let item of data | slice:10">
                         <td>
                             {{item.state}}
                         </td>
